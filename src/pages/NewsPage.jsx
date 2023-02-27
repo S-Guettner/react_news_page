@@ -34,15 +34,15 @@ const NewsPage = () => {
             
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 text-center overflow-x-hidden">
         {news.map((article) => {
-            console.log((article.url).slice(0,10))
             
-            return (<NewsCard 
-            key = {uuidv4()}
-            articleImage = {article.urlToImage}
-            articleTitle = {article.title}
-            articleDescription = {article.description}
-            articleDate = {(article.publishedAt).slice(0,10)}
-            articleLink = {article.url}
+            return (
+            <NewsCard 
+                key = {uuidv4()}
+                articleImage = {article.urlToImage}
+                articleTitle = {article.title}
+                articleDescription = {article.description}
+                articleDate = {(article.publishedAt).slice(0,10)}
+                articleLink = {article.url}
             />)
         })}
 
@@ -50,5 +50,5 @@ const NewsPage = () => {
         </section>
         )
 }
- 
+
 export default NewsPage;
