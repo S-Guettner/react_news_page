@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import NewsPage from './components/NewsPage'
+import NewsPage from "./pages/NewsPage"
 
 function App() {
 
