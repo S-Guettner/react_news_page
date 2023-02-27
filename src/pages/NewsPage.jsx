@@ -9,7 +9,7 @@ const NewsPage = () => {
     const [language,setLanguage] = useState("de")
 
     useEffect(() => {
-        fetch(`http://newsapi.org/v2/everything?q=${search}&language=${language}&apiKey=67e41cd862a2440dabee7d6bf60ad9f6`)
+        fetch(`https://newsapi.org/v2/everything?q=${search}&language=${language}&apiKey=67e41cd862a2440dabee7d6bf60ad9f6`)
         .then(response => response.json())
         .then(data => {
             setNews(data.articles)
